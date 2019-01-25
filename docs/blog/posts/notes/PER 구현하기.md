@@ -4,16 +4,17 @@ description: Prioritized Experience Replay 에 대해 구현해봅니다.
 tags: [Rainbow, RL]
 date: 2018-01-01T00:00:00.000Z
 created: '2019-01-25T08:42:07.860Z'
-modified: '2019-01-25T14:11:12.130Z'
+modified: '2019-01-25T14:21:31.564Z'
 attachments: [PER.png]
 ---
 
 # PER 구현하기
 
 이번에는 `Prioritized Experience Replay` 을 구현해보도록 하겠습니다.
+모든 코드는 <https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole> 에 있습니다.
 
 ## 논문
-https://arxiv.org/pdf/1511.05952.pdf
+<https://arxiv.org/pdf/1511.05952.pdf>
 
 ### 기본내용
 기본 개념은 더 중요한 경험이 있다면 그걸 더 자주 활용하자는 것 입니다. 여기서 중요한 건 `중요한 경험` 이라는 기준입니다.

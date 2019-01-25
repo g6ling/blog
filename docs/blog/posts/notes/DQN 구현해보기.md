@@ -2,15 +2,15 @@
 title: DQN 구현해보기
 description: 제일 기본적인 DQN
 created: '2019-01-22T12:48:39.297Z'
-modified: '2019-01-25T14:11:02.601Z'
+modified: '2019-01-25T14:18:56.779Z'
 tags: [Rainbow, RL]
 ---
 
 # DQN 구현해보기
 
-모든 코드는 https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole 에 있습니다.
+모든 코드는 <https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole> 에 있습니다.
 ## 논문
-https://arxiv.org/abs/1312.5602
+<https://arxiv.org/abs/1312.5602>
 
 워낙 유명한 논문입니다. 사실 강화학습이나 DQN 에 대한 글은 많이 있으니 여기 포스트에서는 길게 설명하지 않겠습니다.
 

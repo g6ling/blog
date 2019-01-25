@@ -3,7 +3,7 @@ title: NoisyNet 구현해보기
 description: NoisyNet 으로 탐험하기
 tags: [Rainbow, RL]
 created: '2019-01-25T09:56:29.879Z'
-modified: '2019-01-25T14:11:10.743Z'
+modified: '2019-01-25T14:18:29.410Z'
 attachments: [NosisyNet.png]
 ---
 
@@ -11,7 +11,7 @@ attachments: [NosisyNet.png]
 
 이번에는 `NoisyNet` 을 구현해보도록 하겠습니다.
 
-모든 코드는 https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole 에 있습ㄴ다.
+모든 코드는 <https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole> 에 있습니다.
 
 ## 논문
 

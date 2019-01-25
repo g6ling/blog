@@ -2,17 +2,17 @@
 title: Duel DQN 구현
 description: Q값을 분리시키자
 created: '2019-01-23T13:08:18.250Z'
-modified: '2019-01-25T14:14:30.399Z'
+modified: '2019-01-25T14:18:38.274Z'
 attachments: [DuelDQN.png]
 tags: [Rainbow, RL]
 ---
 
 # Duel DQN 구현
 
-모든 코드는 https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole 에 있습ㄴ다.
+모든 코드는 <https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole> 에 있습ㄴ다.
 
 ## 논문
-https://arxiv.org/pdf/1511.06581.pdf
+<https://arxiv.org/pdf/1511.06581.pdf>
 
 Duel DQN 은 매우 간단한 발상에서 출발합니다.
 

@@ -2,16 +2,16 @@
 title: Double DQN 구현
 description: Action 선택은 Online Network가
 created: '2019-01-22T13:29:49.009Z'
-modified: '2019-01-25T14:11:05.325Z'
+modified: '2019-01-25T14:18:46.919Z'
 tags: [Rainbow, RL]
 ---
 
 # Double DQN 구현
 
-모든 코드는 https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole 에 있습니다.
+모든 코드는 <https://github.com/g6ling/Reinforcement-Learning-Pytorch-Cartpole> 에 있습니다.
 
 ## 논문
-https://arxiv.org/pdf/1509.06461.pdf
+<https://arxiv.org/pdf/1509.06461.pdf>
 
 내용은 간단합니다. 
 DQN 식에서
