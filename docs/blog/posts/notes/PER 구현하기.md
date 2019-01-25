@@ -1,9 +1,10 @@
 ---
 title: PER 구현하기
-description: 좋은 경험은 더 많이
-tags: [RL]
-created: '2019-01-24T08:42:07.860Z'
-modified: '2019-01-25T13:49:35.344Z'
+description: Prioritized Experience Replay 에 대해 구현해봅니다.
+tags: [Rainbow, RL]
+date: 2018-01-01T00:00:00.000Z
+created: '2019-01-25T08:42:07.860Z'
+modified: '2019-01-25T14:11:12.130Z'
 attachments: [PER.png]
 ---
 

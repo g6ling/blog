@@ -2,8 +2,8 @@
 title: Double DQN 구현
 description: Action 선택은 Online Network가
 created: '2019-01-22T13:29:49.009Z'
-modified: '2019-01-25T13:51:30.329Z'
-tags: [RL]
+modified: '2019-01-25T14:11:05.325Z'
+tags: [Rainbow, RL]
 ---
 
 # Double DQN 구현

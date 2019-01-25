@@ -1,9 +1,9 @@
 ---
 title: DQN 구현해보기
-description: 제일 기본적인 DQN 
+description: 제일 기본적인 DQN
 created: '2019-01-22T12:48:39.297Z'
-modified: '2019-01-25T13:34:03.384Z'
-tags: [RL]
+modified: '2019-01-25T14:11:02.601Z'
+tags: [Rainbow, RL]
 ---
 
 # DQN 구현해보기

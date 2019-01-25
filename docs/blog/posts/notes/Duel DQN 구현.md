@@ -2,9 +2,9 @@
 title: Duel DQN 구현
 description: Q값을 분리시키자
 created: '2019-01-23T13:08:18.250Z'
-modified: '2019-01-25T13:51:27.019Z'
+modified: '2019-01-25T14:14:30.399Z'
 attachments: [DuelDQN.png]
-tags: [RL]
+tags: [Rainbow, RL]
 ---
 
 # Duel DQN 구현
@@ -25,7 +25,7 @@ Duel DQN 은 매우 간단한 발상에서 출발합니다.
 
 이걸 위해서 마지막의 Layer 에서 각각 Layer 을 추가하여서 V, A 값을 얻습니다.
 
-![](../attachments/duelDQN.png)
+![](../attachments/DuelDQN.png)
 
 논문에서는 $Q(s,a) = V(s) + A(s,a)$ 을 그대로 사용하지 않습니다. 이유로는 이럴경우 Q 값을 알때 V와 A가 각각 분리될 수 없기 때문에 (정확히는 Q 값이 주어졌을때 V, A 값을 각각 unique하지 않기 때문에) 성능이 좋지 않다고 합니다.
 그래서 변형식인 

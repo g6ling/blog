@@ -1,9 +1,9 @@
 ---
 title: NoisyNet 구현해보기
 description: NoisyNet 으로 탐험하기
-tags: [RL]
+tags: [Rainbow, RL]
 created: '2019-01-25T09:56:29.879Z'
-modified: '2019-01-25T13:49:27.509Z'
+modified: '2019-01-25T14:11:10.743Z'
 attachments: [NosisyNet.png]
 ---
 

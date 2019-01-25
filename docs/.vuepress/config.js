@@ -30,11 +30,4 @@ module.exports = {
     sidebar: 'auto'
   },
   port: 7000,
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@attachment': 'blog/posts/attachments'
-      }
-    }
-  }
 }
