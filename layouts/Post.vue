@@ -1,16 +1,19 @@
 <template>
     <ParentLayout >
-        <TagList />
+        <TagLinks slot="page-bottom" v-if="this.$frontmatter.tags" class="content padding_bottom_zero"/>
+        <Disqus slot="page-bottom" v-if="this.$frontmatter.tags" class="content padding_top_zero"/>
     </ParentLayout>
 </template>
 
 <script>
     import ParentLayout from '@parent-theme/layouts/Layout.vue'
-    import TagList from '../../components/TagList'
+    import TagLinks from '../../components/TagLinks'
+    import Disqus from '../../components/Disqus'
     export default {
         components: {
             ParentLayout,
-            TagList,
+            Disqus,
+            TagLinks
         }
     }
 </script>

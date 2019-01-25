@@ -2,12 +2,11 @@ module.exports = {
   title: 'Cheol Blog',
   description: 'Just Writing',
   plugins: [
-    '@vuepress/blog',
+    ['@vuepress/blog',{
+      postsDir: 'blog/posts/notes'
+    }],
     '@vuepress/back-to-top',
     '@vuepress/medium-zoom',
-    {
-      postsDir: 'blog'
-    }
   ],
   markdown: {
     extendMarkdown: md => {

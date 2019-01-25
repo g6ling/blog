@@ -1,5 +1,6 @@
+<!-- .vuepress/components/TagLinks.vue -->
 <template lang="html">
-   <div v-if="isNotEmpty" class="wrap">
+  <div>
     Tags:
     <router-link
       v-for="tag in $page.frontmatter.tags"
