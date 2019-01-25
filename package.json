@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0.32",
+    "@vuepress/plugin-blog": "^1.0.0-alpha.0.32",
+    "vuepress": "^1.0.0-alpha.32"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}
