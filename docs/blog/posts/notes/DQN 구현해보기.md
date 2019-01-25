@@ -2,7 +2,7 @@
 title: DQN 구현해보기
 description: 제일 기본적인 DQN
 created: '2019-01-22T12:48:39.297Z'
-modified: '2019-01-25T14:18:56.779Z'
+modified: '2019-01-25T14:23:22.041Z'
 tags: [Rainbow, RL]
 ---
 
@@ -24,7 +24,9 @@ tags: [Rainbow, RL]
 
 ### target network
 `target network` 는 기존의 network는 학습이 되어감과 동시에 자기자신이 바뀐다는 문제가 있습니다. 
-$$loss = (Q(s_t,a_t) - (r + \gamma max_aQ(s_{t+1}, a)))^2$$
+
+$$ loss = (Q(s_t,a_t) - (r + \gamma max_aQ(s_{t+1}, a)))^2 $$
+
 위의 방법을 보면 Q 을 업뎃하기 위해서 Q을 값과 비교하는데 이렇게 된다면 비교대상도 동시에 다시 업데이트 되는 문제가 발생합니다.
 
 그래서 `target-network` 라는 기존의 네트워크와 동일한 네트워크를 하나 만든뒤 그 network 을 일정주기마다 복사하는 방법을 사용합니다. 이러한 방법을 통해서 비교대상을 고정시키는 효과를 노립니다.

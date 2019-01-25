@@ -2,7 +2,7 @@
 title: Double DQN 구현
 description: Action 선택은 Online Network가
 created: '2019-01-22T13:29:49.009Z'
-modified: '2019-01-25T14:18:46.919Z'
+modified: '2019-01-25T14:23:35.339Z'
 tags: [Rainbow, RL]
 ---
 
@@ -16,11 +16,11 @@ tags: [Rainbow, RL]
 내용은 간단합니다. 
 DQN 식에서
 
-$$loss = (Q(s_t,a_t) - (r + \gamma max_aQ(s_{t+1}, a)))^2$$
+$$ loss = (Q(s_t,a_t) - (r + \gamma max_aQ(s_{t+1}, a)))^2 $$
 
 Double DQN 식으로 
 
-$$loss = (Q(s,a) - (r + \gamma Q'(s, argma_{a'}Q(s,a'))))^2$$
+$$ loss = (Q(s,a) - (r + \gamma Q'(s, argma_{a'}Q(s,a'))))^2 $$
 
 바꿉니다.
 단순하게 전에는 target_network 에서 Q 값을 고르고 action 도 target_network 에서 선택을 했다면 이제는 action의 선택을 online_network 에서 하는것 입니다.

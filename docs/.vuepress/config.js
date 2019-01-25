@@ -9,6 +9,15 @@ module.exports = {
       postsDir: 'blog'
     }
   ],
+  markdown: {
+    extendMarkdown: md => {
+      md.use(require("markdown-it-katex"));
+    }
+  },
+  head: [
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }],
+  ],
   themeConfig: {
     nav: [{
         text: 'Home',
@@ -30,4 +39,5 @@ module.exports = {
     sidebar: 'auto'
   },
   port: 7000,
+  ga: 'UA-133232220-1',
 }

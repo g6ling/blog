@@ -3,6 +3,8 @@
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0.32",
     "@vuepress/plugin-blog": "^1.0.0-alpha.0.32",
     "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-katex": "^2.0.3",
     "vuepress": "^1.0.0-alpha.32"
   },
   "scripts": {
