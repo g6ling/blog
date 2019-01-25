@@ -2,6 +2,6 @@
 sidebar: false
 ---
 
-# Blog
+# Tags
 
-<BlogIndex />
+<TagList />

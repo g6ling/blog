@@ -1,25 +1,26 @@
 <template>
-<div>
+  <div>
     <div v-for="post in posts">
-        <h2>
-            <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
-        </h2>
-        
-        <p>{{ post.frontmatter.description }}</p>
+      <h2>
+        <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
+      </h2>
 
-        <p><router-link :to="post.path">Read more</router-link></p>
+      <p>{{ post.frontmatter.created.slice(0,10) }}</p>
+      <p>{{ post.frontmatter.description }}</p>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
 export default {
-    computed: {
-        posts() {
-            return this.$site.pages
-                .filter(x => x.path.startsWith('/blog/posts/'))
-                .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
-        }
+  computed: {
+    posts() {
+      return this.$site.pages
+        .filter(x => x.path.startsWith("/blog/posts/notes/"))
+        .sort(
+          (a, b) => new Date(b.frontmatter.created) - new Date(a.frontmatter.created)
+        );
     }
-}
+  }
+};
 </script>
