@@ -38,11 +38,16 @@
       <slot
         name="page-top"
         slot="top"
-      />
+      >
+        <TagLinks class="custom-component tag-links top " />
+      </slot>
       <slot
         name="page-bottom"
         slot="bottom"
-      />
+      >
+        <TagLinks class="custom-component tag-links bottom" />
+        <Disqus class="custom-component disqus bottom" />
+      </slot>
     </Page>
   </div>
 </template>
@@ -50,7 +55,7 @@
 <script>
 import Home from '../components/Home.vue'
 import Navbar from '../components/Navbar.vue'
-import Page from '../components/PostPage.vue'
+import Page from '../components/Page.vue'
 import Sidebar from '../components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 
