@@ -1,3 +1,3 @@
-# Blog
+# Posts
 
 <BlogIndex />

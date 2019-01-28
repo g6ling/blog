@@ -43,8 +43,8 @@ module.exports = {
         link: '/about/'
       },
       {
-        text: 'Blog',
-        link: '/blog/'
+        text: 'Posts',
+        link: '/posts/'
       },
       {
         text: 'Tag',
