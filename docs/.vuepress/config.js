@@ -49,6 +49,10 @@ module.exports = {
         text: 'Tag',
         link: '/tag/'
       },
+      {
+        text: 'Github',
+        link: 'https://github.com/g6ling/blog'
+      },
     ],
     sidebar: 'auto'
   },
