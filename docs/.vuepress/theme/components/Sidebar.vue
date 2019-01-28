@@ -1,5 +1,6 @@
 <template>
   <aside class="sidebar">
+    <h2>{{ name }}</h2>
     <NavLinks/>
     <slot name="top"/>
     <ul class="sidebar-links" v-if="items.length">
@@ -28,7 +29,7 @@ import { isActive } from '../util'
 export default {
   components: { SidebarGroup, SidebarLink, NavLinks },
 
-  props: ['items'],
+  props: ['items', 'name'],
 
   data () {
     return {
@@ -99,6 +100,9 @@ function resolveOpenGroupIndex (route, items) {
       padding 0.5rem 0 0.5rem 1.5rem
   .sidebar-links
     padding 1.5rem 0
+  h2
+    padding 0 0 0.3rem 1.5rem
+    margin-bottom 0
 
 @media (max-width: $MQMobile)
   .sidebar

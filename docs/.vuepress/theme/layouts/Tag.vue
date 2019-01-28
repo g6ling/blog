@@ -39,7 +39,12 @@
       <slot
         name="page-top"
         slot="top"
-      >adfsd</slot>
+      >
+        <TagList
+          class="custom-component top"
+          :tags="tagItems"
+        />
+      </slot>
       <slot
         name="page-bottom"
         slot="bottom"
@@ -53,10 +58,11 @@ import Home from '../components/Home.vue'
 import Navbar from '../components/Navbar.vue'
 import Page from '../components/Page.vue'
 import Sidebar from '../components/Sidebar.vue'
+import TagList from '../../components/TagList.vue'
 import { resolveSidebarItems } from '../util/sidebar'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: { Home, Page, Sidebar, Navbar, TagList },
 
   data () {
     return {
@@ -108,13 +114,18 @@ export default {
         },
         userPageClass
       ]
+    },
+
+    tagItems () {
+      const nowTag = this.$tag.path.split('/')[2].split('.')[0]
+      
+      return this.$tags.list.filter(tag => tag.name === nowTag)
     }
   },
 
   mounted () {
-    if (this.$page.path === '/blog/') {
-      this.$store.dispatch('changeSidebar', { mode: 'all', name: `All Posts` })
-    }
+    const tag = this.$tag.path.split('/')[2].split('.')[0]
+    this.$store.dispatch('changeSidebar', { mode: 'tag', name: `Tag: ${tag}`, option: tag })
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
     })

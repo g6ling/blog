@@ -17,6 +17,7 @@
 
     <Sidebar
       :items="sidebarItems"
+      :name="sidebarName"
       @toggle-sidebar="toggleSidebar"
     >
       <slot
@@ -57,7 +58,7 @@ import Home from '../components/Home.vue'
 import Navbar from '../components/Navbar.vue'
 import Page from '../components/Page.vue'
 import Sidebar from '../components/Sidebar.vue'
-import { resolveSidebarItems } from '../util'
+import { resolveSidebarItems } from '../util/sidebar'
 
 export default {
   components: { Home, Page, Sidebar, Navbar },
@@ -96,12 +97,11 @@ export default {
     },
 
     sidebarItems () {
-      return resolveSidebarItems(
-        this.$page,
-        this.$page.regularPath,
-        this.$site,
-        this.$localePath
-      )
+      return resolveSidebarItems(this.$store.state, this.$tags, this.$page, this.$site.pages)
+    },
+
+    sidebarName () {
+      return this.$store.state.sidebar.name
     },
 
     pageClasses () {

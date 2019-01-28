@@ -29,8 +29,8 @@
         slot="bottom"
       />
     </Sidebar>
-
-    <Home v-if="$page.frontmatter.home"/>
+    
+    <Home v-if="$page.frontmatter.home"></Home>
 
     <Page
       v-else
@@ -39,7 +39,12 @@
       <slot
         name="page-top"
         slot="top"
-      >adfsd</slot>
+      >
+        <TagList
+          class="custom-component top"
+          :tags="tagItems"
+        />
+      </slot>
       <slot
         name="page-bottom"
         slot="bottom"
@@ -53,10 +58,11 @@ import Home from '../components/Home.vue'
 import Navbar from '../components/Navbar.vue'
 import Page from '../components/Page.vue'
 import Sidebar from '../components/Sidebar.vue'
+import TagList from '../../components/TagList.vue'
 import { resolveSidebarItems } from '../util/sidebar'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: { Home, Page, Sidebar, Navbar, TagList },
 
   data () {
     return {
@@ -90,7 +96,6 @@ export default {
         this.sidebarItems.length
       )
     },
-
     sidebarItems () {
       return resolveSidebarItems(this.$store.state, this.$tags, this.$page, this.$site.pages)
     },
@@ -108,13 +113,15 @@ export default {
         },
         userPageClass
       ]
+    },
+
+    tagItems () {
+      return this.$tags.list.filter(tag => tag.name !== 'WIP')
     }
   },
 
   mounted () {
-    if (this.$page.path === '/blog/') {
-      this.$store.dispatch('changeSidebar', { mode: 'all', name: `All Posts` })
-    }
+    this.$store.dispatch('changeSidebar', { mode: 'tags', name: 'All Tags' })
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
     })

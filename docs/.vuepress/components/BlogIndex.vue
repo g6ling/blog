@@ -16,7 +16,7 @@ export default {
     posts() {
       return this.$site.pages
         .filter(x => x.type === 'post')
-        .filter(x => !x.frontmatter.tags.includes('WIP'))
+        .filter(x => x.frontmatter.tags && !x.frontmatter.tags.includes('WIP'))
         .sort(
           (a, b) => new Date(b.frontmatter.created) - new Date(a.frontmatter.created)
         );

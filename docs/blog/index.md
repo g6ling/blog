@@ -1,6 +1,3 @@
----
-sidebar: false
----
 
 # Blog
 
