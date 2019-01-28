@@ -28,6 +28,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: `/images/logo-144.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/logo-180.png' }],
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }],
   ],
