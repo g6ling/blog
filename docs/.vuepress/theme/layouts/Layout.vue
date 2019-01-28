@@ -112,7 +112,7 @@ export default {
   },
 
   mounted () {
-    if (this.$page.path === '/blog/') {
+    if (this.$page.path === '/posts/') {
       this.$store.dispatch('changeSidebar', { mode: 'all', name: `All Posts` })
     }
     this.$router.afterEach(() => {
