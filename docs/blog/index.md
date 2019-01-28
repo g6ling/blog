@@ -1,4 +1,3 @@
-
 # Blog
 
 <BlogIndex />

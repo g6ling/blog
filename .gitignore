@@ -2,6 +2,7 @@
 # Created by https://www.gitignore.io/api/node,macos,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=node,macos,visualstudiocode
 
+docs/.vuepress/dist
 ### macOS ###
 # General
 .DS_Store
