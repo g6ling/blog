@@ -2,11 +2,13 @@
 title: Vuepress 로 블로그 만들기 후기
 tags: [Vuepress]
 created: '2019-01-25T14:06:31.537Z'
-modified: '2019-01-28T11:31:31.943Z'
+modified: '2019-01-28T12:25:38.138Z'
 attachments: [vuepress-1.png]
 ---
 
 # Vuepress 로 블로그 만들기 후기
+
+제 블로그는 https://github.com/g6ling/blog 에 있습니다. 잘 안되는 부분이 있다면 코드를 보시고 분석하시면 금방 알수 있을것 이라고 생각됩니다. 
 
 ## 왜 Vuepress?
 그러게 말입니다. 사실 그냥 무슨 블로그 보다가 디자인이 맘에 들기에 뭐지 하다가 vuepress 인거 보고 괜찮겟네? 라고 생각햇던게 화근입니다.

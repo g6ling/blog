@@ -1,11 +1,13 @@
 ---
 title: Vuepress Blog Plugin 이해하기
 created: '2019-01-28T11:31:37.532Z'
-modified: '2019-01-28T12:00:14.786Z'
+modified: '2019-01-28T12:25:33.624Z'
 tags: [Vuepress]
 ---
 
 # Vuepress Blog Plugin 이해하기
+
+제 블로그는 https://github.com/g6ling/blog 에 있습니다. 잘 안되는 부분이 있다면 코드를 보시고 분석하시면 금방 알수 있을것 이라고 생각됩니다. 
 
 처음에 Vuepress 로 블로그를 만들기로 할때,  https://vuepress.vuejs.org/plugin/official/plugin-blog.html 가 있길래 이거 쓰면 좀 편하게 만들 수 있겟지 라고 생각했습니다.
 
