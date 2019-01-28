@@ -4,7 +4,6 @@ module.exports = {
   plugins: [
     ['@vuepress/blog',{
       postsDir: 'blog/posts/notes',
-      permalink: '/:regular',
     }],
     '@vuepress/back-to-top',
     '@vuepress/medium-zoom',

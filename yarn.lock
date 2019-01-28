@@ -882,10 +882,10 @@
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-blog/-/plugin-blog-1.0.0-alpha.32.tgz#e9cdd43c3253d804f23549d11d9f0ccd9bacec91"
   integrity sha512-GQDapngpxTEBeCgC58Viva6DuH0BhbgCLa62chPZtX1y144qYtQD3vDyuN33efRO4reeHPFHGYvX0L8lL9MvKQ==
 
-"@vuepress/plugin-google-analytics@^1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.0.0-alpha.0.tgz#97acb3a512dca9b2b6e4014fa2d58da38e2a01b9"
-  integrity sha512-WNUIayJFBmTb06bjvFeJd5TlT4qoYcCLN15zkEGeAGH8tCH2BtrwMkSG3BiiWSh3xRUy7kDHhsuclSZcRY08EQ==
+"@vuepress/plugin-google-analytics@^1.0.0-alpha.0.32":
+  version "1.0.0-alpha.33"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.0.0-alpha.33.tgz#857ec3777ca0776ad97f994c5f3cd5ad9e527a9f"
+  integrity sha512-07G/mtyZ91cVzDfxs9s6szuS7kf5LZLPo0o39b0VoxWg71EiPNVE4BVH5ArTNDsSf/IEc3lBoF0LTaAoRltPqw==
 
 "@vuepress/plugin-last-updated@^1.0.0-alpha.32":
   version "1.0.0-alpha.32"
@@ -894,10 +894,10 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-medium-zoom@^1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.0.0-alpha.0.tgz#efb6bd10d41c64161e3e25d6108fe527ebd4abad"
-  integrity sha512-yAvRhoMRH0OSKqYna/fvfxgFQ6kp/8AmdrPiZRB2POGbHcP+I6igoqAlxGO+5h9l25e94XGwoCTFTJu8m2uuCw==
+"@vuepress/plugin-medium-zoom@^1.0.0-alpha.0.32":
+  version "1.0.0-alpha.33"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.0.0-alpha.33.tgz#260777d0fc16c3b184288b80be2f399d13a109b6"
+  integrity sha512-nfmSzXqPiUWA7zTjSW+BJ9q24JDjLPk6nELs7fExdJBHkcg5CxE5RdWFGcP8+tCjVrAUwBmjrDCGYqSXB8lKMw==
   dependencies:
     medium-zoom "^0.4.0"
 
