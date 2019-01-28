@@ -1,12 +1,12 @@
 ---
-title: Vuepress 로 블로그 만들기
-tags: [Vue, WIP]
+title: Vuepress 로 블로그 만들기 후기
+tags: [Vuepress]
 created: '2019-01-25T14:06:31.537Z'
-modified: '2019-01-28T11:06:26.220Z'
+modified: '2019-01-28T11:31:31.943Z'
 attachments: [vuepress-1.png]
 ---
 
-# Vuepress 로 블로그 만들기
+# Vuepress 로 블로그 만들기 후기
 
 ## 왜 Vuepress?
 그러게 말입니다. 사실 그냥 무슨 블로그 보다가 디자인이 맘에 들기에 뭐지 하다가 vuepress 인거 보고 괜찮겟네? 라고 생각햇던게 화근입니다.
@@ -76,12 +76,14 @@ Layout 에 맞춰서 보여주는데 이게 component 는 안되고 무조건 La
   `Tag, Tags, Category, Categories, Post` 가 존재 하지 않으면 `Page`로 전부다 출력하고
   `Page`도 존재하지 않으면 `Layout`으로 출력합니다.
 
-이 부분에 대해서는 다음글에 좀더 자세히 설명하겠습니다.
+이 부분에 대해서는 다음글에 좀더 자세히 설명하겠습니다. 쓰다보니 이유는 알겠지만 설명도 부족하고 애매한 구석이 너무 많습니다.
 
 ## 한글 파일명 문제
 markdown 파일 이름이 한글이면 뒤로가기를 할때 패스를 제대로 못찾는 경우가 있습니다. 때문에 항상 영어로 이름을 지어야 합니다.
+왜 그런지는 정확하게 잘 모르겠습니다...
 
-## Latex 식 보여주기
+## 결론
+vue 을 한번도 안써봤음에도 불구하고 꽤나 쉽게 만질 수 있었습니다. 그전에 써봣던 다른 static site generator 와 다른점은 단순하게 Markdown 을 HTML 로 바꿔주는게 아니라 중간에 Vue 을 통하기 때문에 정말 자유성이 높은 것 같습니다. 지금까지 써본 static site generator 중에서는 처음 정보가 없기 때문에 있던 조금의 귀찮음 빼고는 전부다 만족스러운것 같습니다. 아마 근시일 내에 많은 정보가 생기면 훨씬 괜찮은 툴이 될 것 같습니다.
 
 ## 도움되는 블로그
 https://62che.com/blog/
